@@ -139,3 +139,22 @@ a:active {
   color: #1e1e1e;
   text-decoration: none;
 }
+
+.dl-horizontal {
+  padding: 0;
+  margin: 0;
+}
+
+.dl-horizontal dt {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.dl-horizontal dd {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}

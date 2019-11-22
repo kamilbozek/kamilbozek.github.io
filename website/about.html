@@ -1,0 +1,26 @@
+---
+layout: default
+title: "About"
+---
+<h1>About</h1>
+<p class="aboutContent">Software Engineer based in Cracow</p>
+
+<h1 class="padded">Professional experience</h1>
+<ul class="listAbout">
+  {% for job in site.data.jobs %}
+  <li>
+    <dl><dt>{{ job.when }}</dt>
+      <dd><a href="{{ job.companyWebsite }}" target="_blank"><strong>{{ job.company }}</strong> - {{ job.position }}</a></dd>
+    </dl>
+  </li>
+  {% endfor %}
+</ul>
+
+<h1 class="padded">Skills</h1>
+<p class="aboutContent">Scala, Python, algorithms, Reactive Programming, microservices, functional programming, SQL, C++, Linux, Design Patterns</p>
+
+<h1 class="padded">Find me</h1>
+<p class="aboutContent">
+  <a href="https://www.linkedin.com/in/kamilbozek" target="_blank">LinkedIn</a>
+  <a href="https://www.instagram.com/kamilbozek/" target="_blank">Instagram</a>
+</p>

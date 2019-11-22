@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+
+<!-- <body>
+  <div class="wrapper">
+    <header class="header">{% include header.html %}</header>
+    <aside class="navigation">{% include navigation.html %}</aside>
+    <article class="content">{{ content }}</article>
+    <footer class="footer">{% include footer.html %}</footer>
+  </div>
+</body> -->
+
+<body>
+  <div class="wrapper">
+    <header class="header">{% include header.html %}</header>
+    <nav class="navigation">{% include navigation.html %}</nav>
+    <article class="content">{{ content }}</article>
+    <footer class="footer">{% include footer.html %}</footer>
+  </div>
+</body>
+
+</html>

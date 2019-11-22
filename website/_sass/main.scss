@@ -61,7 +61,7 @@ body {
   // background-color: blue;
   grid-area: content;
   padding: 20px 5px 5px;
-  font-size: 1.15rem;
+  font-size: 1.10rem;
 }
 
 .footer {
@@ -71,6 +71,7 @@ body {
   font-size: small;
   text-align: center;
   padding: 5px;
+  padding-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
@@ -108,7 +109,7 @@ a:active {
 h1 {
   font-weight: bold;
   padding-bottom: 5px;
-  font-size: 1.30rem;
+  font-size: 1.25rem;
 }
 
 .listAbout {
@@ -119,6 +120,10 @@ h1 {
 
 .padded {
   padding-top: 20px;
+}
+
+.paddedDouble {
+  padding-top: 40px;
 }
 
 dl {

@@ -60,7 +60,8 @@ body {
 .content {
   // background-color: blue;
   grid-area: content;
-  padding: 20px 5px 5px;
+  padding: 5px;
+  padding-top: 20px;
   font-size: 1.10rem;
 }
 
@@ -73,6 +74,7 @@ body {
   padding: 5px;
   padding-top: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .wrapper {
     display: grid;

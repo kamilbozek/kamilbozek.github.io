@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /img/
-Disallow: /css/
 
-Sitemap: http://www.kamilbozek.pl/sitemap.txt
+Sitemap: http://www.kamilbozek.com/sitemap.txt

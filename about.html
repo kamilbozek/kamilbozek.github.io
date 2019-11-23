@@ -1,83 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139208262-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+---
+layout: default
+title: "About"
+---
+<p class="aboutContent">Software Engineer based in Cracow</p>
 
-  gtag('config', 'UA-139208262-1');
-</script>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Kamil Bożek">
-    <meta name="author" content="Kamil Bożek">
-    <meta name="author" content="Kamil Bożek">
+<h1 class="paddedDouble">Professional experience</h1>
 
-    <meta property="og:url" content="www.kamilbozek.com">
-    <meta property="og:title" content="Kamil Bożek">
-    <meta property="og:description" content="Kamil Bożek">
+<div class="jobs">
+  {% for job in site.data.jobs %}
+  <div class="jobInfo">{{ job.when }}</div>
+  <div class="jobInfo"><a href="{{ job.companyWebsite }}" target="_blank"><strong>{{ job.company }}</strong></a></div>
+  <div class="jobRole">{{ job.position }}</div>
+  {% endfor %}
+</div>
 
-    <title>Kamil Bożek - about</title>
+<h1 class="paddedDouble">Skills</h1>
+<p class="aboutContent">Scala, Python, algorithms, Reactive Programming, microservices, functional programming, SQL, C++, Linux, Design Patterns</p>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
-    
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Begin page content -->
-    <div class="container wrapper">
-      <div class="row">
-        <div class="col-sm-3 colMenu">
-          <h4 class="pName"><a href="index.html">Kamil Bożek</a></h4>
-          <ul class="listMenu">
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 colContent">
-          <p class="aboutHeader">About</p>
-          <p class="aboutContent">Software Engineer based in Cracow</p>
-      
-          <p class="aboutHeader">Professional experience</p>
-          <ul class="listAbout">
-              <li><dl class="dl-horizontal"><dt>2019 - up till now</dt><dd><a href="https://virtuslab.com/" target="_blank"><strong>VirtusLab</strong> - Scala software engineer</a></dd></dl></li>
-              <li><dl class="dl-horizontal"><dt>2018 - 2019</dt><dd><a href="http://www.scalaric.com/" target="_blank"><strong>Scalaric</strong> - Scala software engineer</a></dd></dl></li>
-              <li><dl class="dl-horizontal"><dt>2015 - 2017</dt><dd><a href="http://www.ibm.com/" target="_blank"><strong>IBM</strong> - Python / C++ software engineer</a></dd></dl></li>
-              <li><dl class="dl-horizontal"><dt>2014</dt><dd><a href="http://www.plaxis.com/" target="_blank"><strong>Plaxis BV</strong> - C++ software engineer, internship</a></dd></dl></li>
-          </ul>
-      
-          <p class="aboutHeader">Skills</p>
-          <p class="aboutContent">Scala, Python, algorithms, Reactive Programming, microservices, functional programming, SQL, C++, Linux, Design Patterns</p>
-      
-          <p class="aboutHeader">Find me</p>
-          <p class="aboutContent" style="margin-top: -5px;">
-              <a href="https://www.linkedin.com/in/kamilbozek" target="_blank"><img src="img/in.svg" height="20"></a>
-              <a href="https://www.instagram.com/kamilbozek/" target="_blank"><img src="img/instagram.png" height="20" style="padding-left: 7px;"></a>
-          </p>
-      </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="pFooter">&copy; Kamil Bożek</p>
-      </div>
-    </footer>
-
-
-  </body>
-</html>
+<h1 class="paddedDouble">Find me</h1>
+<p class="aboutContent">
+  <a href="https://www.linkedin.com/in/kamilbozek" target="_blank">LinkedIn</a>
+  <a href="https://www.instagram.com/kamilbozek/" target="_blank">Instagram</a>
+</p>

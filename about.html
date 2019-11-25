@@ -8,9 +8,8 @@ title: "About"
 
 <div class="jobs">
   {% for job in site.data.jobs %}
-  <div class="jobInfo">{{ job.when }}</div>
   <div class="jobInfo"><a href="{{ job.companyWebsite }}" target="_blank"><strong>{{ job.company }}</strong></a></div>
-  <div class="jobRole">{{ job.position }}</div>
+  <div class="jobRole">{{ job.position }} ({{ job.when }})</div>
   {% endfor %}
 </div>
 

@@ -1,3 +1,20 @@
-{% for item in site.data.navigation %}
-  <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-{% endfor %}
+
+<nav role="navigation" id="navigation">
+  <ul id="menuHorizontal">
+  {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+  {% endfor %}
+  </ul>
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

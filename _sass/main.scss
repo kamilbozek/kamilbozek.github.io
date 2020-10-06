@@ -250,7 +250,7 @@ h1 {
     min-height: 100%;
     padding: 0;
     margin: 0;
-    grid-template-columns: 1fr minmax(20%, 300px) minmax(30%, 467px) 1fr;
+    grid-template-columns: 1fr minmax(min-content, 300px) minmax(min-content, 467px) 1fr;
     grid-auto-rows: 10% auto 1fr auto;
     grid-template-areas: ". . . ." ". header navigation ." ". content content ." ". footer footer .";
     grid-gap: 0;

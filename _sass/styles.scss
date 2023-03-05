@@ -1,11 +1,13 @@
 $backgroundColor: #f7f7f7;
 $lightGrey: #b5b5b5;
 $darkGrey: #1e1e1e;
+$electricBlue: #3137FD;
+$electricBlueDarker: #171EFD;
 
 $bodyColor: $darkGrey;
 $navigationColor: $darkGrey;
 $footerColor: $lightGrey;
-$bodyFont: 'Roboto Mono',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: 'Hanken Grotesk',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 *,
 *:after,
@@ -25,7 +27,7 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #menuToggle
@@ -133,7 +135,7 @@ body {
 #menu li
 {
   padding: 10px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -143,14 +145,36 @@ body {
   transform: none;
 }
 
+.header {
+  a:link {
+    color: $bodyColor;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: $bodyColor;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: $bodyColor;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: $bodyColor;
+    text-decoration: none;
+  }
+}
+
 a:link {
   color: $bodyColor;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
   color: $bodyColor;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -164,16 +188,16 @@ a:active {
 }
 
 h1 {
-  font-weight: bold;
   padding-bottom: 5px;
-  font-size: 1.0rem;
-  text-decoration: underline;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .wrapper {
   display: grid;
   min-height: 100%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-auto-rows: auto auto 1fr auto;
   grid-template-areas: "header navigation" "menu menu" "content content" "footer footer";
   grid-gap: 5px;
@@ -201,8 +225,9 @@ h1 {
   grid-area: header;
   align-items: center;
   padding: 10px;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 3.0rem;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .navigation {
@@ -212,7 +237,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 #menuHorizontal {
@@ -232,7 +257,7 @@ h1 {
   grid-area: content;
   padding: 10px;
   padding-top: 20px;
-  font-size: 1.0rem;
+  font-size: 1.5rem;
 }
 
 .footer {

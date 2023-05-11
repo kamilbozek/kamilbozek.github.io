@@ -7,7 +7,7 @@ $electricBlueDarker: #171EFD;
 $bodyColor: $darkGrey;
 $navigationColor: $darkGrey;
 $footerColor: $lightGrey;
-$bodyFont: 'Hanken Grotesk',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: 'Roboto',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 *,
 *:after,
@@ -135,7 +135,7 @@ body {
 #menu li
 {
   padding: 10px 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -189,9 +189,8 @@ a:active {
 
 h1 {
   padding-bottom: 5px;
-  font-size: 3rem;
-  font-weight: 900;
-  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -225,9 +224,7 @@ h1 {
   grid-area: header;
   align-items: center;
   padding: 10px;
-  font-size: 3.0rem;
-  font-weight: 900;
-  font-style: italic;
+  font-size: 2rem;
 }
 
 .navigation {
@@ -237,7 +234,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #menuHorizontal {

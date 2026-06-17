@@ -15,7 +15,7 @@ body {
 body {
   background: #f7f7f7;
   color: #1e1e1e;
-  font-family: Arial, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Helvetica, Arial, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 
@@ -68,6 +68,12 @@ h2 {
   font-size: 2rem;
 }
 
+.header h1 {
+  padding-bottom: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .content {
   flex: 1;
   padding-top: 20px;
@@ -76,7 +82,7 @@ h2 {
 }
 
 .footer {
-  color: #b5b5b5;
+  color: #666;
   font-size: small;
   text-align: center;
   padding-top: 40px;
@@ -91,8 +97,4 @@ h2 {
 
 .padded {
   padding-top: 20px;
-}
-
-.paddedDouble {
-  padding-top: 40px;
 }

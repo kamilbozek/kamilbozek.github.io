@@ -48,20 +48,6 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-.skip-link {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  padding: 8px;
-  background: #f7f7f7;
-  color: #1e1e1e;
-  transform: translateY(-200%);
-}
-
-.skip-link:focus-visible {
-  transform: translateY(0);
-}
-
 h1,
 h2 {
   padding-bottom: 5px;
